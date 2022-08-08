@@ -20,18 +20,18 @@ module.exports = {
     'vertical-depth/bundle': './demo/vertical-depth/scripts.js'
   },
   output: {
-    path: './demo/',
+    path: __dirname + '/demo',
     filename: '[name].js'
   },
   devtool: 'source-map',
-  module: {
-    loaders: [
-      {
-        loader: 'babel',
-        query: {
-          presets: ['es2015']
-        }
-      }
-    ]
-  }
+//   module: {
+//     loaders: [
+//       {
+//         loader: 'babel',
+//         query: {
+//           presets: ['es2015']
+//         }
+//       }
+//     ]
+//   }
 };
